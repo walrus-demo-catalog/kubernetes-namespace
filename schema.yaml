@@ -32,11 +32,11 @@ components:
           title: Quota Limits Memory
           type: string
           description: Memory limits quota of the namespace. e.g. 512, 2048, 4096, 8192
-          default: 4096
+          default: '4096'
           enum:
-            - 2048
-            - 4096
-            - 8192
+            - '2048'
+            - '4096'
+            - '8192'
           x-walrus-ui:
             group: Quota
             order: 3
@@ -58,11 +58,11 @@ components:
           title: Quota Requests Memory
           type: string
           description: Memory requests quota of the namespace. e.g. 512, 2048, 4096, 8192
-          default: 2048
+          default: '2048'
           enum:
-            - 2048
-            - 4096
-            - 8192
+            - '2048'
+            - '4096'
+            - '8192'
           x-walrus-ui:
             group: Quota
             order: 5
@@ -85,12 +85,12 @@ components:
           title: Default Limits Memory
           type: string
           description: Default memory limits of containers in the namespace. e.g. 128, 256, 512, 1024
-          default: 128
+          default: '128'
           enum:
-            - 128
-            - 256
-            - 512
-            - 1024
+            - '128'
+            - '256'
+            - '512'
+            - '1024'
           x-walrus-ui:
             group: Limits
             order: 7
@@ -114,12 +114,12 @@ components:
           title: Default Requests Memory
           type: string
           description: Default memory requests of containers in the namespace. e.g. 128, 256, 512, 1024
-          default: 128
+          default: '128'
           enum:
-            - 128
-            - 256
-            - 512
-            - 1024
+            - '128'
+            - '256'
+            - '512'
+            - '1024'
           x-walrus-ui:
             group: Limits
             order: 9
