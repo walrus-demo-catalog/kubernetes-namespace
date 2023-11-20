@@ -19,7 +19,12 @@ components:
           title: Quota Limits CPU
           type: string
           description: CPU limits quota of the namespace. e.g. 0.5, 1, 2, 4
-          default: ""
+          default: "4"
+          enum:
+            - 0.5
+            - 1
+            - 2
+            - 4
           x-walrus-ui:
             group: Quota
             order: 2
@@ -27,7 +32,11 @@ components:
           title: Quota Limits Memory
           type: string
           description: Memory limits quota of the namespace. e.g. 512, 2048, 4096, 8192
-          default: ""
+          default: "4096"
+          enum:
+            - 2048
+            - 4096
+            - 8192
           x-walrus-ui:
             group: Quota
             order: 3
@@ -36,7 +45,12 @@ components:
           title: Quota Requests CPU
           type: string
           description: CPU requests quota of the namespace. e.g. 0.5, 1, 2, 4
-          default: ""
+          default: "2"
+          enum:
+            - 0.5
+            - 1
+            - 2
+            - 4
           x-walrus-ui:
             group: Quota
             order: 4
@@ -44,7 +58,11 @@ components:
           title: Quota Requests Memory
           type: string
           description: Memory requests quota of the namespace. e.g. 512, 2048, 4096, 8192
-          default: ""
+          default: "2048"
+          enum:
+            - 2048
+            - 4096
+            - 8192
           x-walrus-ui:
             group: Quota
             order: 5
@@ -53,36 +71,60 @@ components:
           title: Default Limits CPU
           type: string
           description: Default CPU limits of containers in the namespace. e.g. 0.05, 0.1, 0.5, 1, 2
-          default: ""
+          default: "0.05"
+          enum:
+            - 0.05
+            - 0.1
+            - 0.2
+            - 0.5
           x-walrus-ui:
             group: Limits
             order: 6
+            immutable: true
         default_limits_memory:
           title: Default Limits Memory
           type: string
           description: Default memory limits of containers in the namespace. e.g. 128, 256, 512, 1024
-          default: ""
+          default: "128"
+          enum:
+            - 128
+            - 256
+            - 512
+            - 1024
           x-walrus-ui:
             group: Limits
             order: 7
             widget: Memory
+            immutable: true
         default_requests_cpu:
           title: Default Requests CPU
           type: string
           description: Default CPU requests of containers in the namespace. e.g. 0.05, 0.1, 0.5, 1, 2
-          default: ""
+          default: "0.05"
+          enum:
+            - 0.05
+            - 0.1
+            - 0.2
+            - 0.5
           x-walrus-ui:
             group: Limits
             order: 8
+            immutable: true
         default_requests_memory:
           title: Default Requests Memory
           type: string
           description: Default memory requests of containers in the namespace. e.g. 128, 256, 512, 1024
-          default: ""
+          default: "128"
+          enum:
+            - 128
+            - 256
+            - 512
+            - 1024
           x-walrus-ui:
             group: Limits
             order: 9
             widget: Memory
+            immutable: true
         walrus_metadata_service_name:
           title: Walrus Metadata Service Name
           type: string
