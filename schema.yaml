@@ -19,7 +19,7 @@ components:
           title: Quota Limits CPU
           type: string
           description: CPU limits quota of the namespace. e.g. 0.5, 1, 2, 4
-          default: "4"
+          default: 4
           enum:
             - 0.5
             - 1
@@ -32,7 +32,7 @@ components:
           title: Quota Limits Memory
           type: string
           description: Memory limits quota of the namespace. e.g. 512, 2048, 4096, 8192
-          default: "4096"
+          default: 4096
           enum:
             - 2048
             - 4096
@@ -45,7 +45,7 @@ components:
           title: Quota Requests CPU
           type: string
           description: CPU requests quota of the namespace. e.g. 0.5, 1, 2, 4
-          default: "2"
+          default: 2
           enum:
             - 0.5
             - 1
@@ -58,7 +58,7 @@ components:
           title: Quota Requests Memory
           type: string
           description: Memory requests quota of the namespace. e.g. 512, 2048, 4096, 8192
-          default: "2048"
+          default: 2048
           enum:
             - 2048
             - 4096
@@ -71,7 +71,7 @@ components:
           title: Default Limits CPU
           type: string
           description: Default CPU limits of containers in the namespace. e.g. 0.05, 0.1, 0.5, 1, 2
-          default: "0.05"
+          default: 0.05
           enum:
             - 0.05
             - 0.1
@@ -85,7 +85,7 @@ components:
           title: Default Limits Memory
           type: string
           description: Default memory limits of containers in the namespace. e.g. 128, 256, 512, 1024
-          default: "128"
+          default: 128
           enum:
             - 128
             - 256
@@ -100,7 +100,7 @@ components:
           title: Default Requests CPU
           type: string
           description: Default CPU requests of containers in the namespace. e.g. 0.05, 0.1, 0.5, 1, 2
-          default: "0.05"
+          default: 0.05
           enum:
             - 0.05
             - 0.1
@@ -114,7 +114,7 @@ components:
           title: Default Requests Memory
           type: string
           description: Default memory requests of containers in the namespace. e.g. 128, 256, 512, 1024
-          default: "128"
+          default: 128
           enum:
             - 128
             - 256
