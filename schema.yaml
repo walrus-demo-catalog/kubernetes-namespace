@@ -16,14 +16,13 @@ components:
             group: Basic
             order: 1
         quota_limits_cpu:
-          title: Quota Limits Cpu
+          title: Quota Limits CPU
           type: string
           description: CPU limits quota of the namespace. e.g. 0.5, 1, 2, 4
           default: ""
           x-walrus-ui:
             group: Quota
             order: 2
-            widget: CpuCore
         quota_limits_memory:
           title: Quota Limits Memory
           type: string
@@ -34,14 +33,13 @@ components:
             order: 3
             widget: Memory
         quota_requests_cpu:
-          title: Quota Requests Cpu
+          title: Quota Requests CPU
           type: string
           description: CPU requests quota of the namespace. e.g. 0.5, 1, 2, 4
           default: ""
           x-walrus-ui:
             group: Quota
             order: 4
-            widget: CpuCore
         quota_requests_memory:
           title: Quota Requests Memory
           type: string
@@ -52,14 +50,13 @@ components:
             order: 5
             widget: Memory
         default_limits_cpu:
-          title: Default Limits Cpu
+          title: Default Limits CPU
           type: string
           description: Default CPU limits of containers in the namespace. e.g. 0.05, 0.1, 0.5, 1, 2
           default: ""
           x-walrus-ui:
             group: Limits
             order: 6
-            widget: CpuCore
         default_limits_memory:
           title: Default Limits Memory
           type: string
@@ -70,14 +67,13 @@ components:
             order: 7
             widget: Memory
         default_requests_cpu:
-          title: Default Requests Cpu
+          title: Default Requests CPU
           type: string
           description: Default CPU requests of containers in the namespace. e.g. 0.05, 0.1, 0.5, 1, 2
           default: ""
           x-walrus-ui:
             group: Limits
             order: 8
-            widget: CpuCore
         default_requests_memory:
           title: Default Requests Memory
           type: string
