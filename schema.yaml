@@ -70,10 +70,9 @@ components:
         default_limits_cpu:
           title: Default Limits CPU
           type: string
-          description: Default CPU limits of containers in the namespace. e.g. 0.05, 0.1, 0.5, 1, 2
-          default: 0.05
+          description: Default CPU limits of containers in the namespace. e.g. 0.1, 0.5, 1, 2
+          default: 0.1
           enum:
-            - 0.05
             - 0.1
             - 0.2
             - 0.5
@@ -99,10 +98,9 @@ components:
         default_requests_cpu:
           title: Default Requests CPU
           type: string
-          description: Default CPU requests of containers in the namespace. e.g. 0.05, 0.1, 0.5, 1, 2
-          default: 0.05
+          description: Default CPU requests of containers in the namespace. e.g. 0.1, 0.5, 1, 2
+          default: 0.1
           enum:
-            - 0.05
             - 0.1
             - 0.2
             - 0.5
