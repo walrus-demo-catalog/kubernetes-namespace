@@ -19,12 +19,12 @@ components:
           title: Quota Limits CPU
           type: string
           description: CPU limits quota of the namespace. e.g. 0.5, 1, 2, 4
-          default: 4
+          default: '4'
           enum:
-            - 0.5
-            - 1
-            - 2
-            - 4
+            - '0.5'
+            - '1'
+            - '2'
+            - '4'
           x-walrus-ui:
             group: Quota
             order: 2
@@ -45,12 +45,12 @@ components:
           title: Quota Requests CPU
           type: string
           description: CPU requests quota of the namespace. e.g. 0.5, 1, 2, 4
-          default: 2
+          default: '2'
           enum:
-            - 0.5
-            - 1
-            - 2
-            - 4
+            - '0.5'
+            - '1'
+            - '2'
+            - '4'
           x-walrus-ui:
             group: Quota
             order: 4
@@ -70,12 +70,13 @@ components:
         default_limits_cpu:
           title: Default Limits CPU
           type: string
-          description: Default CPU limits of containers in the namespace. e.g. 0.1, 0.5, 1, 2
-          default: 0.1
+          description: Default CPU limits of containers in the namespace. e.g. 0.05, 0.1, 0.5, 1, 2
+          default: '0.05'
           enum:
-            - 0.1
-            - 0.2
-            - 0.5
+            - '0.05'
+            - '0.1'
+            - '0.2'
+            - '0.5'
           x-walrus-ui:
             group: Limits
             order: 6
@@ -98,12 +99,13 @@ components:
         default_requests_cpu:
           title: Default Requests CPU
           type: string
-          description: Default CPU requests of containers in the namespace. e.g. 0.1, 0.5, 1, 2
-          default: 0.1
+          description: Default CPU requests of containers in the namespace. e.g. 0.05, 0.1, 0.5, 1, 2
+          default: '0.05'
           enum:
-            - 0.1
-            - 0.2
-            - 0.5
+            - '0.05'
+            - '0.1'
+            - '0.2'
+            - '0.5'
           x-walrus-ui:
             group: Limits
             order: 8
