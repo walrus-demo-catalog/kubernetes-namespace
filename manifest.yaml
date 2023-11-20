@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ${namespace}
+---
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: ${namespace}-quota
+  namespace: ${namespace}
+spec:
+  hard:
+    limits.cpu: ${quota_limits_cpu}
+    limits.memory: ${quota_limits_memory}
+    requests.cpu: ${quota_requests_cpu}
+    requests.memory: ${quota_requests_memory}
+---
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: ${namespace}-limits
+spec:
+  limits:
+  - type: Container
+    default:
+      cpu: ${default_limits_cpu}
+      memory: ${default_limits_memory}
+    defaultRequest:
+      cpu: ${default_requests_cpu}
+      memory: ${default_requests_memory}
