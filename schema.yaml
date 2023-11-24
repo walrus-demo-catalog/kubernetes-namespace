@@ -1,12 +1,12 @@
 openapi: 3.0.3
 info:
-  title: OpenAPI schema for template.
+  title: OpenAPI schema for template
 components:
   schemas:
     variables:
+      type: object
       required:
       - namespace
-      type: object
       properties:
         namespace:
           title: Namespace
@@ -19,7 +19,8 @@ components:
           title: Quota Limits CPU
           type: string
           description: CPU limits quota of the namespace. e.g. 0.5, 1, 2, 4
-          default: '4'
+          default: "4"
+          nullable: true
           enum:
             - '0.5'
             - '1'
@@ -31,21 +32,23 @@ components:
         quota_limits_memory:
           title: Quota Limits Memory
           type: string
-          description: Memory limits quota of the namespace. e.g. 512, 2048, 4096, 8192
-          default: '4096'
+          description: Memory limits quota of the namespace. e.g. 512Mi, 2Gi, 4Gi, 8Gi
+          default: "4Gi"
+          nullable: true
           enum:
-            - '2048'
-            - '4096'
-            - '8192'
+            - '512Mi'
+            - '2Gi'
+            - '4Gi'
+            - '8Gi'
           x-walrus-ui:
             group: Quota
             order: 3
-            widget: Memory
         quota_requests_cpu:
           title: Quota Requests CPU
           type: string
           description: CPU requests quota of the namespace. e.g. 0.5, 1, 2, 4
-          default: '2'
+          default: "2"
+          nullable: true
           enum:
             - '0.5'
             - '1'
@@ -57,21 +60,23 @@ components:
         quota_requests_memory:
           title: Quota Requests Memory
           type: string
-          description: Memory requests quota of the namespace. e.g. 512, 2048, 4096, 8192
-          default: '2048'
+          description: Memory requests quota of the namespace. e.g. 512Mi, 2Gi, 4Gi, 8Gi
+          default: "2Gi"
+          nullable: true
           enum:
-            - '2048'
-            - '4096'
-            - '8192'
+            - '512Mi'
+            - '2Gi'
+            - '4Gi'
+            - '8Gi'
           x-walrus-ui:
             group: Quota
             order: 5
-            widget: Memory
         default_limits_cpu:
           title: Default Limits CPU
           type: string
           description: Default CPU limits of containers in the namespace. e.g. 0.05, 0.1, 0.5, 1, 2
-          default: '0.05'
+          default: "0.05"
+          nullable: true
           enum:
             - '0.05'
             - '0.1'
@@ -80,27 +85,26 @@ components:
           x-walrus-ui:
             group: Limits
             order: 6
-            immutable: true
         default_limits_memory:
           title: Default Limits Memory
           type: string
-          description: Default memory limits of containers in the namespace. e.g. 128, 256, 512, 1024
-          default: '128'
+          description: Default memory limits of containers in the namespace. e.g. 128Mi, 256Mi, 512Mi, 1Gi
+          default: "128Mi"
+          nullable: true
           enum:
-            - '128'
-            - '256'
-            - '512'
-            - '1024'
+            - '128Mi'
+            - '256Mi'
+            - '512Mi'
+            - '1Gi'
           x-walrus-ui:
             group: Limits
             order: 7
-            widget: Memory
-            immutable: true
         default_requests_cpu:
           title: Default Requests CPU
           type: string
           description: Default CPU requests of containers in the namespace. e.g. 0.05, 0.1, 0.5, 1, 2
-          default: '0.05'
+          default: "0.05"
+          nullable: true
           enum:
             - '0.05'
             - '0.1'
@@ -109,27 +113,26 @@ components:
           x-walrus-ui:
             group: Limits
             order: 8
-            immutable: true
         default_requests_memory:
           title: Default Requests Memory
           type: string
-          description: Default memory requests of containers in the namespace. e.g. 128, 256, 512, 1024
-          default: '128'
+          description: Default memory requests of containers in the namespace. e.g. 128Mi, 256Mi, 512Mi, 1Gi
+          default: "128Mi"
+          nullable: true
           enum:
-            - '128'
-            - '256'
-            - '512'
-            - '1024'
+            - '128Mi'
+            - '256Mi'
+            - '512Mi'
+            - '1Gi'
           x-walrus-ui:
             group: Limits
             order: 9
-            widget: Memory
-            immutable: true
         walrus_metadata_service_name:
           title: Walrus Metadata Service Name
           type: string
           description: Walrus metadata service name.
           default: ""
+          nullable: true
           x-walrus-ui:
             group: Basic
             order: 10
@@ -139,6 +142,7 @@ components:
           type: string
           description: Walrus metadata namespace name.
           default: ""
+          nullable: true
           x-walrus-ui:
             group: Basic
             order: 11
@@ -163,6 +167,7 @@ components:
                 id: string
             ```
           default: {}
+          nullable: true
           additionalProperties:
             type: object
             x-walrus-ui:
@@ -172,3 +177,8 @@ components:
             group: Basic
             hidden: true
             order: 12
+      x-walrus-ui:
+        groupOrder:
+        - Basic
+        - Quota
+        - Limits
