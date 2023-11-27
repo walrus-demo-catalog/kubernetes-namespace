@@ -33,7 +33,7 @@ components:
           title: Quota Limits Memory
           type: string
           description: Memory limits quota of the namespace. e.g. 512Mi, 2Gi, 4Gi, 8Gi
-          default: "4Gi"
+          default: "8Gi"
           nullable: true
           enum:
             - '512Mi'
@@ -61,7 +61,7 @@ components:
           title: Quota Requests Memory
           type: string
           description: Memory requests quota of the namespace. e.g. 512Mi, 2Gi, 4Gi, 8Gi
-          default: "2Gi"
+          default: "4Gi"
           nullable: true
           enum:
             - '512Mi'
@@ -75,7 +75,7 @@ components:
           title: Default Limits CPU
           type: string
           description: Default CPU limits of containers in the namespace. e.g. 0.05, 0.1, 0.5, 1, 2
-          default: "0.05"
+          default: "0.1"
           nullable: true
           enum:
             - '0.05'
@@ -103,7 +103,7 @@ components:
           title: Default Requests CPU
           type: string
           description: Default CPU requests of containers in the namespace. e.g. 0.05, 0.1, 0.5, 1, 2
-          default: "0.05"
+          default: "0.1"
           nullable: true
           enum:
             - '0.05'
@@ -127,26 +127,6 @@ components:
           x-walrus-ui:
             group: Limits
             order: 9
-        walrus_metadata_service_name:
-          title: Walrus Metadata Service Name
-          type: string
-          description: Walrus metadata service name.
-          default: ""
-          nullable: true
-          x-walrus-ui:
-            group: Basic
-            order: 10
-            hidden: true
-        walrus_metadata_namespace_name:
-          title: Walrus Metadata Namespace Name
-          type: string
-          description: Walrus metadata namespace name.
-          default: ""
-          nullable: true
-          x-walrus-ui:
-            group: Basic
-            order: 11
-            hidden: true
         context:
           title: Context
           type: object
@@ -176,7 +156,7 @@ components:
             colSpan: 12
             group: Basic
             hidden: true
-            order: 12
+            order: 10
       x-walrus-ui:
         groupOrder:
         - Basic
