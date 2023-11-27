@@ -35,8 +35,6 @@ No modules.
 | <a name="input_quota_limits_memory"></a> [quota\_limits\_memory](#input\_quota\_limits\_memory) | Memory limits quota of the namespace. e.g. 512Mi, 2Gi, 4Gi, 8Gi | `string` | `""` | no |
 | <a name="input_quota_requests_cpu"></a> [quota\_requests\_cpu](#input\_quota\_requests\_cpu) | CPU requests quota of the namespace. e.g. 0.5, 1, 2, 4 | `string` | `""` | no |
 | <a name="input_quota_requests_memory"></a> [quota\_requests\_memory](#input\_quota\_requests\_memory) | Memory requests quota of the namespace. e.g. 512Mi, 2Gi, 4Gi, 8Gi | `string` | `""` | no |
-| <a name="input_walrus_metadata_namespace_name"></a> [walrus\_metadata\_namespace\_name](#input\_walrus\_metadata\_namespace\_name) | Walrus metadata namespace name. | `string` | `""` | no |
-| <a name="input_walrus_metadata_service_name"></a> [walrus\_metadata\_service\_name](#input\_walrus\_metadata\_service\_name) | Walrus metadata service name. | `string` | `""` | no |
 
 ## Outputs
 
