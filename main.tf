@@ -10,7 +10,7 @@ terraform {
 data "kubectl_path_documents" "manifest" {
   pattern = "${path.module}/manifest.yaml"
   vars = {
-    namespace               = var.name
+    namespace               = var.namespace
     quota_limits_cpu        = var.quota_limits_cpu
     quota_limits_memory     = var.quota_limits_memory
     quota_requests_cpu      = var.quota_requests_cpu

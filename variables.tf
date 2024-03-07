@@ -1,4 +1,4 @@
-variable "name" {
+variable "namespace" {
   type        = string
   description = "Name of the namespace resource."
 }

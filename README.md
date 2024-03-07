@@ -30,7 +30,7 @@ No modules.
 | <a name="input_default_limits_memory"></a> [default\_limits\_memory](#input\_default\_limits\_memory) | Default memory limits of containers in the namespace. e.g. 128Mi, 256Mi, 512Mi, 1Gi | `string` | `""` | no |
 | <a name="input_default_requests_cpu"></a> [default\_requests\_cpu](#input\_default\_requests\_cpu) | Default CPU requests of containers in the namespace. e.g. 0.05, 0.1, 0.5, 1, 2 | `string` | `""` | no |
 | <a name="input_default_requests_memory"></a> [default\_requests\_memory](#input\_default\_requests\_memory) | Default memory requests of containers in the namespace. e.g. 128Mi, 256Mi, 512Mi, 1Gi | `string` | `""` | no |
-| <a name="input_name"></a> [name](#input\_name) | Name of the namespace resource. | `string` | n/a | yes |
+| <a name="input_namespace"></a> [namespace](#input\_namespace) | Name of the namespace resource. | `string` | n/a | yes |
 | <a name="input_quota_limits_cpu"></a> [quota\_limits\_cpu](#input\_quota\_limits\_cpu) | CPU limits quota of the namespace. e.g. 0.5, 1, 2, 4 | `string` | `""` | no |
 | <a name="input_quota_limits_memory"></a> [quota\_limits\_memory](#input\_quota\_limits\_memory) | Memory limits quota of the namespace. e.g. 512Mi, 2Gi, 4Gi, 8Gi | `string` | `""` | no |
 | <a name="input_quota_requests_cpu"></a> [quota\_requests\_cpu](#input\_quota\_requests\_cpu) | CPU requests quota of the namespace. e.g. 0.5, 1, 2, 4 | `string` | `""` | no |
@@ -44,7 +44,7 @@ No modules.
 | <a name="output_default_limits_memory"></a> [default\_limits\_memory](#output\_default\_limits\_memory) | Default memory limits of containers in the namespace |
 | <a name="output_default_requests_cpu"></a> [default\_requests\_cpu](#output\_default\_requests\_cpu) | Default CPU requests of containers in the namespace |
 | <a name="output_default_requests_memory"></a> [default\_requests\_memory](#output\_default\_requests\_memory) | Default memory requests of containers in the namespace |
-| <a name="output_name"></a> [name](#output\_name) | Name of the namespace resource |
+| <a name="output_namespace"></a> [namespace](#output\_namespace) | Name of the namespace resource |
 | <a name="output_quota_limits_cpu"></a> [quota\_limits\_cpu](#output\_quota\_limits\_cpu) | CPU limits quota of the namespace |
 | <a name="output_quota_limits_memory"></a> [quota\_limits\_memory](#output\_quota\_limits\_memory) | Memory limits quota of the namespace |
 | <a name="output_quota_requests_cpu"></a> [quota\_requests\_cpu](#output\_quota\_requests\_cpu) | CPU requests quota of the namespace |

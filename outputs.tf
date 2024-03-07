@@ -1,6 +1,6 @@
-output "name" {
+output "namespace" {
   description = "Name of the namespace resource"
-  value       = var.name
+  value       = var.namespace
 }
 
 output "quota_limits_cpu" {
