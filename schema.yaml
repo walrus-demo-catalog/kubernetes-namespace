@@ -6,10 +6,10 @@ components:
     variables:
       type: object
       required:
-      - namespace
+      - name
       properties:
-        namespace:
-          title: Namespace
+        name:
+          title: Name
           type: string
           description: Name of the namespace resource.
           x-walrus-ui:
